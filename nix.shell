@@ -1,0 +1,3 @@
+nix run .#formatter.x86_64-linux -- flake.nix Modules/core/default.nix Modules/default.nix tests/evaluation/default.nix
+nix run .#formatter.x86_64-linux -- --check flake.nix Modules/core/default.nix Modules/default.nix tests/evaluation/default.nix
+nix flake check --show-trace
